@@ -1,0 +1,377 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: Sintony, sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PlayfairDisplay', serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #5c6369;
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2c465a;
+}
+
+a:hover, a:focus, a:active {
+  color: #2c465a;
+  text-decoration: none;
+}
+
+/* Navigation */
+.menu {
+  font-size: 1.4rem;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__link {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menu__link:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #2c465a;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+
+.menu__link:hover:before, .menu__link:focus:before, .menu__link:active:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button_orange {
+  background: #fea100;
+  color: #fff;
+  font-weight: 700;
+}
+
+.button_orange:hover, .button_orange:active, .button_orange:focus {
+  background: #ffb432;
+  color: #fff;
+}
+
+.button__order {
+  background: url("../img/order.png") no-repeat center center;
+  display: inline-block;
+  height: 17px;
+  width: 21px;
+  margin-right: 13px;
+  vertical-align: middle;
+}
+
+.navigation {
+  padding: 21px 0 16px;
+  background: #fff;
+}
+
+.navigation__logo {
+  margin-top: 4px;
+}
+
+.navigation__menu {
+  margin-top: 15px;
+}
+
+.navigation__button {
+  float: right;
+  display: inline-block;
+  padding: 14px 0;
+  width: 200px;
+  position: relative;
+}
+
+.offer {
+  background: url("../img/first-bg.jpg") no-repeat center center/cover;
+  min-height: 570px;
+  color: #fff;
+}
+
+.offer__title {
+  margin-top: 220px;
+}
+
+.offer__desc {
+  color: #fff;
+  font-family: 'PlayfairDisplay', serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: -0.8rem;
+}
+
+.offer__desc span {
+  color: #fea100;
+}
+
+/* CALL */
+.call {
+  background: #edf1f3;
+  padding: 30px 0;
+}
+
+.call__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.call__text {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  background: url("../img/phone.png") no-repeat left center;
+  padding: 5px 0;
+  padding-left: 56px;
+}
+
+.call__text span {
+  display: block;
+  font-size: 1.6rem;
+  color: #fea100;
+}
+
+.call__number {
+  display: inline-block;
+  margin-left: 46px;
+  margin-top: -5px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.about {
+  padding: 66px 0 100px;
+}
+
+.about__img {
+  margin-bottom: 10px;
+}
+
+.about__imgs_down {
+  margin-top: 50px;
+}
+
+.about-me {
+  margin-top: 50px;
+}
+
+.about-me__text {
+  margin-top: 30px;
+  line-height: 1.9;
+}
+
+.about-me__button {
+  padding: 18px 30px;
+  margin-top: 40px;
+}
+
+/* Special */
+.special {
+  background: #fff url("../img/third-bg.jpg") no-repeat center top;
+  text-align: center;
+  padding: 90px 0 130px;
+}
+
+.special__title {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.food {
+  -webkit-box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 24px 38px rgba(0, 0, 0, 0.09);
+  background: #fff;
+}
+
+.food__img {
+  width: 100%;
+}
+
+.food__wrap {
+  padding: 0 65px;
+}
+
+.food__body {
+  padding: 45px 0 55px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.food__text {
+  margin-top: 18px;
+}
+
+.food__footer {
+  padding: 18px 0 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.food__delivary {
+  text-transform: uppercase;
+  padding-right: 15px;
+  border-right: 1px solid #e1e1e1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.food__delivary span {
+  display: block;
+  color: #fe4c8d;
+}
+
+.food__number {
+  font-size: 2.6rem;
+  font-family: serif;
+  font-weight: 700;
+}
+
+.food__price {
+  font-size: 3rem;
+  font-family: serif;
+  font-weight: 700;
+  color: #fea100;
+}
+
+/**/
+.footer {
+  background: #373844;
+  padding: 80px 0 100px;
+}
+
+.footer__social {
+  display: table;
+  margin: 0 auto;
+}
+
+.footer__line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #52535e;
+  margin-top: 0.7rem;
+}
+
+.footer__copy {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #adb2b7;
+  text-align: center;
+}
+
+.social {
+  margin-bottom: 45px;
+}
+
+.social__link {
+  display: block;
+  line-height: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.social__link_fb {
+  background: #3b5998;
+}
+
+.social__link_tw {
+  background: #55acee;
+}
+
+.social__link_g {
+  background: #dd4b39;
+}
+
+.social__item {
+  margin-right: 5px;
+  float: left;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=main.css.map */

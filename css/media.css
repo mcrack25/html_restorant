@@ -1,0 +1,115 @@
+/* MD */
+@media (max-width: 991px) {
+  .about {
+    text-align: center;
+  }
+  .about__imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .about__img:last-child {
+    margin-right: 0;
+  }
+  .food__delivary {
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+  .food__number {
+    width: 100%;
+    text-align: center;
+  }
+  .food__price {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* SM */
+@media (max-width: 767px) {
+  .navigation .menu {
+    margin-bottom: 10px;
+  }
+  .navigation__logo {
+    text-align: center;
+  }
+  .navigation__button {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .food {
+    margin-bottom: 20px;
+  }
+  .footer__line {
+    margin-top: 0;
+  }
+  .footer__copy {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+  .offer__title {
+    margin-top: 150px;
+  }
+  .offer__desc {
+    font-size: 3rem;
+  }
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .call__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .call__text {
+    display: block;
+  }
+  .call__number {
+    display: block;
+    margin: 0;
+  }
+  .about__imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__img {
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+  }
+  .menu__link::before {
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+}
+/*# sourceMappingURL=media.css.map */
